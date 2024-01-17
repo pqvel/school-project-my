@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ff825919-4df7-4315-acbc-e118b7c2d7e1&lang=ru_RU&onload=initMap"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="swiper sub-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">HOME</div>
+          <div class="swiper-slide">ABOUT ME</div>
+          <div class="swiper-slide">PROFESSIONAL ACTIVITY</div>
+          <div class="swiper-slide">MY WORKS</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide page">
+          <div class="row">
+            <div class="col center">
+              <h2 style="text-align: center">Гаврилович Дмитрий Сергеевич</h2>
+            </div>
+            <div class="col">
+              <img src="./public/dimaFolio.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide page plans">
+          <div class="scroll-y container">
+            <div class="plans__cards">
+              <div class="plans__card">
+                <img style="width: 350px" src="./public/bspu.jpg" alt="" />
+                <div class="plans__card-item">
+                  <p class="plans__des">
+                    Белорусский государственный педагогический университет им.
+                    М. Танка <br />
+                    <b>Факультет</b>: физико-математический <br /><b
+                      >Специальность</b
+                    >: физика и информатика
+                  </p>
+                  <p style="margin-top: 20px" class="plans__des">
+                    Год поступления: 2020
+                  </p>
+                  <p class="plans__des">Год окончания: 2024</p>
+                </div>
+              </div>
+
+              <div class="plans__card">
+                <img style="width: 350px" src="./public/mediacube.jpg" alt="" />
+                <div class="plans__card-item">
+                  <p class="plans__des">
+                    Сертификат о прохожднии стажировки в компании MediaCube<br />
+                    <b>Должность:</b>системный администратор<br />
+                  </p>
+                  <p style="margin-top: 20px" class="plans__des">
+                    Mediacube — официальная партнерская сеть YouTube
+                  </p>
+                  <p class="plans__des">Время стажировки: 100 часов</p>
+                  <p class="plans__des">
+                    В последующем работа в компании в период с 12 июля по 25
+                    августа
+                  </p>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px" class="plans__card">
+                <div
+                  style="display: flex; flex-direction: row"
+                  class="plans__card-item"
+                >
+                  <p
+                    style="
+                      font-size: 24px;
+                      background-color: #fff;
+                      padding: 12px;
+                      border-radius: 10%;
+                      text-align: center;
+                      box-shadow: 2px 2px 2px #000;
+                    "
+                    class="plans__des"
+                  >
+                    Знание языков:
+                  </p>
+                  <p
+                    style="
+                      font-size: 24px;
+                      background-color: #fff;
+                      padding: 12px;
+                      border-radius: 10%;
+                      text-align: center;
+                      box-shadow: 2px 2px 2px #000;
+                    "
+                    class="plans__des"
+                  >
+                    Белорусский — Родной
+                  </p>
+                  <p
+                    style="
+                      font-size: 24px;
+                      background-color: #fff;
+                      padding: 12px;
+                      border-radius: 10%;
+                      text-align: center;
+                      box-shadow: 2px 2px 2px #000;
+                    "
+                    class="plans__des"
+                  >
+                    Русский — C — В совершенстве
+                  </p>
+                  <p
+                    style="
+                      font-size: 24px;
+                      background-color: #fff;
+                      padding: 12px;
+                      border-radius: 10%;
+                      text-align: center;
+                      box-shadow: 2px 2px 2px #000;
+                    "
+                    class="plans__des"
+                  >
+                    Английский — А2
+                  </p>
+                </div>
+              </div>
+
+              <div style="margin-top: 30px" class="plans__card">
+                <div class="plans__card-item">
+                  <h2 class="plans__title">Ключевые особенности</h2>
+                  <div style="display: flex" class="naviks">
+                    <div
+                      style="
+                        padding: 0 10px;
+                        background-color: #cacaca;
+                        font-size: 18px;
+                        max-width: 300px;
+                        border-radius: 15px;
+                        text-align: center;
+                      "
+                      class="plans__des"
+                    >
+                      Работоспособность
+                    </div>
+                    <div
+                      style="
+                        padding: 0 10px;
+                        background-color: #cacaca;
+                        font-size: 18px;
+                        max-width: 300px;
+                        border-radius: 15px;
+                        text-align: center;
+                      "
+                      class="plans__des"
+                    >
+                      Стрессоустойчивость
+                    </div>
+                    <div
+                      style="
+                        padding: 0 10px;
+                        background-color: #cacaca;
+                        font-size: 18px;
+                        max-width: 300px;
+                        border-radius: 15px;
+                        text-align: center;
+                      "
+                      class="plans__des"
+                    >
+                      Быстрая обучаемость
+                    </div>
+                    <div
+                      style="
+                        padding: 0 10px;
+                        background-color: #cacaca;
+                        font-size: 18px;
+                        max-width: 300px;
+                        border-radius: 15px;
+                        text-align: center;
+                      "
+                      class="plans__des"
+                    >
+                      Ответственность
+                    </div>
+                    <div
+                      style="
+                        padding: 0 10px;
+                        background-color: #cacaca;
+                        font-size: 18px;
+                        max-width: 300px;
+                        border-radius: 15px;
+                        text-align: center;
+                      "
+                      class="plans__des"
+                    >
+                      Коммуникабельность
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="plans__card">
+                <div class="plans__card-item">
+                  <h2 class="plans__title">Ключевые навыки</h2>
+                  <ul class="plans__items" style="font-size: 32px; margin: 0">
+                    <li class="plans__item">HTML, CSS, SCSS, SASS</li>
+                    <li class="plans__item">Bootstrap</li>
+                    <li class="plans__item">javascript, React, Typescript</li>
+                    <li class="plans__item">Webpack, Gulp, Vite</li>
+                    <li class="plans__item">Redux</li>
+                    <li class="plans__item">
+                      Базовый уровень: c#, python, nodejs
+                    </li>
+                  </ul>
+                  <p class="plans__des" style="font-size: 20px">
+                    Владение ПК на уровне "продвинутого" пользователя. <br />
+                    Переустановка и настройка различных операционных систем (от
+                    windows xp до windows 11; Linux (Ubuntu, Debian, Mint);
+                    macOS.<br />Диагностика, установка драйверов, антивируса,
+                    настройка интернета wifi, удаление вирусов, модернизация
+                    (сборка/ подборка комплектующих).<br />Опыт удаленной
+                    поддержки пользователей посредством соответствующего ПО,
+                    настройка рабочих мест, заведение учетных записей, контроль
+                    доступа,
+                    <b
+                      >OC Windows Server, DNS, DHCP, Microtik, MS SQL Server,
+                      VMware, powershell, TCP/IP</b
+                    >. <br />Техобслуживание ноутбуков, стационарных
+                    компьютеров: чистка, модульный ремонт; замена термопасты.
+                    Работа и настройка <b>VPN</b>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide page plans">
+          <div class="scroll-y container">
+            <div class="practics">
+              <div class="practic">
+                <div class="practic__info">
+                  <h2 class="practic__title">Педагогическая практика 3 курс</h2>
+                  <p class="practic__des">
+                    На базе ГУО "Гимназия #74 г. Минска"
+                  </p>
+                  <p class="practic__des">Предмет: физика и информатика</p>
+                  <p class="practic__des">Классы: 6-9</p>
+                  <p class="practic__des">
+                    <b>Отметка за прохождение практики: 9</b>
+                  </p>
+                </div>
+                <img
+                  class="professional"
+                  src="./public/dima1.jpg"
+                  alt="photo-dima"
+                />
+              </div>
+              <div class="practic">
+                <img
+                  class="professional"
+                  src="./public/dima2.jpg"
+                  alt="photo-dima"
+                />
+                <div class="practic__info">
+                  <h2 class="practic__title">Педагогическая практика 4 курс</h2>
+                  <p class="practic__des">
+                    На базе ГУО "Гимназия #74 г. Минска"
+                  </p>
+                  <p class="practic__des">Предмет: физика и информатика</p>
+                  <p class="practic__des">Классы: 9-11</p>
+                  <p class="practic__des">
+                    <b>Отметка за прохождение практики: 9</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="practics__main practic-main">
+              <h2 style="text-align: center" class="practic-main__title">
+                Жизненный опыт
+              </h2>
+              <div class="rabota">
+                <img src="./public/rabota1.jpg" alt="" />
+                <img src="./public/rabota2.jpg" alt="" />
+                <img src="./public/rabota3.png" alt="" />
+              </div>
+              <p class="practic-main-des">
+                2022 - 2024 занимаю должность лаборанта на кафедре информатики и
+                методики преподавания информатики БГПУ. Работа включает в себя
+                проведения экскурский и профориентационных занятий для учащихся
+                школ и студентов; системное администрирование
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide page plans">
+          <div class="scroll-y container">
+            <div class="works">
+              <h2 style="text-align: center" class="works__title">
+                Научные работы
+              </h2>
+              <div class="works-global">
+                <div class="work work-3sem">
+                  <h3 style="text-align: center" class="work__title">
+                    ПРАКТИКО-ОРИЕНТИРОВАННЫЕ ЗАДАНИЯ ПРИ ИЗУЧЕНИИ ООП НА ЯЗЫКЕ
+                    C# В СРЕДЕ MS VISUAL STUDIO
+                  </h3>
+
+                  <p class="work__des">3 курс, 5 семестр</p>
+
+                  <p class="work__des">Научный руководитель: Заборовский Г.А</p>
+
+                  <div
+                    style="
+                      text-align: center;
+                      margin-top: 10px;
+                      font-size: 18px;
+                    "
+                  >
+                    В статье рассмотрены некоторые особенности
+                    объектно-ориентированного программирования: создания
+                    программы с реализацией классов, экземпляров, методов
+                    перегрузки, наследования, конструкторов, работой с
+                    публичными и приватными полями.
+                  </div>
+
+                  <div class="work__image">
+                    <img src="./public/tuholko.png" alt="" />
+                    <img src="./public/tuholko2.png" alt="" />
+                    <img src="./public/tuholko3.png" alt="" />
+                  </div>
+
+                  <a href="" class="work__link">Ознакомиться с работой</a>
+                </div>
+
+                <div class="work work-3sem">
+                  <h3 style="text-align: center" class="work__title">
+                    ПРАКТИКО-ОРИЕНТИРОВАННЫЕ ЗАДАНИЯ ПРИ ИЗУЧЕНИИ ООП НА ЯЗЫКЕ
+                    C# В СРЕДЕ MS VISUAL STUDIO
+                  </h3>
+
+                  <p class="work__des">3 курс, 6 семестр</p>
+
+                  <p class="work__des">Научный руководитель: Заборовский Г.А</p>
+
+                  <div
+                    style="
+                      text-align: center;
+                      margin-top: 10px;
+                      font-size: 18px;
+                    "
+                  >
+                    Цели курсовой работы: Изучить и проанализировать литературу
+                    и ресурсы интернет по теме; Изучить особенности разработки
+                    программного обеспечения по теме; выбрать оптимальные
+                    инструменты и методы. Разработать примеры, иллюстрирующие
+                    возможности разработки и использования
+                    практико-ориентированных заданий при изучении ООП в среде MS
+                    Visual Studio.
+                  </div>
+
+                  <a href="" class="work__link wlink">Ознакомиться с работой</a>
+                </div>
+
+                <div class="work work-3sem">
+                  <h3 style="text-align: center" class="work__title">
+                    РАЗРАБОТКА ПРОГРАММЫ ФАКУЛЬТАТИВА ПО ИЗУЧЕНИЮ ВОЗМОЖНОСТЕЙ
+                    ВЕБ-ТЕХНОЛОГИИ CSS
+                  </h3>
+
+                  <p class="work__des">4 курс</p>
+
+                  <p class="work__des">Научный руководитель: Быкадоров Ю.А</p>
+
+                  <div
+                    style="
+                      text-align: center;
+                      margin-top: 10px;
+                      font-size: 18px;
+                    "
+                  >
+                    Главная цель курсовой работы: Разработать систему
+                    практических заданий в поддержку программы факультатива.
+                  </div>
+
+                  <div class="work__image">
+                    <img src="./public/worki1.png" alt="" />
+                    <img src="./public/worki2.png" alt="" />
+                    <img src="./public/worki3.png" alt="" />
+                  </div>
+
+                  <a href="" class="work__link wlink">Ознакомиться с работой</a>
+                </div>
+              </div>
+              <h2
+                style="text-align: center; margin-top: 30px"
+                class="works__title"
+              >
+                Проекты
+              </h2>
+              <div class="projects">
+                <div class="project">
+                  <img src="./public/snapgram.png" alt="" />
+                  <div class="project__info">
+                    <h3 class="project__title">Snapgram</h3>
+                    <p class="project__des">
+                      Соц.сеть, позволяющая обмениваться информацией с различных
+                      точек земеного шара :)
+                    </p>
+                    <p class="project__des">
+                      Ключевые особенности: React, Tailwind
+                    </p>
+                    <p class="project__des">Статус: в разработке</p>
+                    <a href="https://github.com/Dalmonker/snapgram"
+                      >Ознакомиться</a
+                    >
+                  </div>
+                </div>
+
+                <div class="project">
+                  <img src="./public/fitnes.png" alt="" />
+                  <div class="project__info">
+                    <h3 class="project__title">FitnessTracker</h3>
+                    <p class="project__des">Одностраничный лендинг</p>
+                    <p class="project__des">
+                      Ключевые особенности: html, js, scss
+                    </p>
+                    <p class="project__des">Статус: завершено</p>
+                    <a href="https://dalmonker.github.io/FitnessTracker/"
+                      >Ознакомиться</a
+                    >
+                  </div>
+                </div>
+
+                <div class="project">
+                  <img src="./public/celendar.png" alt="" />
+                  <div class="project__info">
+                    <h3 class="project__title">Celendar/Todolist</h3>
+                    <p class="project__des">Календарь/Тудулист</p>
+                    <p class="project__des">
+                      Ключевые особенности: React, scss
+                    </p>
+                    <p class="project__des">Статус: завершено</p>
+                    <a href="https://pqvel.github.io/calendarTodoList/"
+                      >Ознакомиться</a
+                    >
+                  </div>
+                </div>
+
+                <div class="project">
+                  <img src="./public/blanchard.png" alt="" />
+                  <div class="project__info">
+                    <h3 class="project__title">Blanchard</h3>
+                    <p class="project__des">Одностраничный лендинг</p>
+                    <p class="project__des">
+                      Ключевые особенности: html, js, scss
+                    </p>
+                    <p class="project__des">Статус: завершено</p>
+                    <a href="https://dalmonker.github.io/blanchard-landing/"
+                      >Ознакомиться</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      var coordinates = [53.895482, 27.446457];
+
+      function initMap(ymaps) {
+        var myMap = new ymaps.Map("map", {
+          center: coordinates, // центр карты
+          zoom: 16, // коэффициент масштабирования,
+          maxZoom: 8,
+          controls: [],
+          minZoom: 12,
+        });
+        myMap.geoObjects.add(
+          new ymaps.Placemark(
+            coordinates,
+            {
+              preset: "islands#icon",
+              iconColor: "#0095b6",
+            },
+            {
+              preset: "islands#governmentCircleIcon",
+              iconColor: "#3b5998",
+            }
+          )
+        );
+      }
+    </script>
+  </body>
+</html>

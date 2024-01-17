@@ -1,0 +1,307 @@
+html {
+  display: flex;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  flex: 1;
+  max-width: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: crimson;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.professional {
+  width: 33.33%;
+  height: 33.33%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+p {
+  margin-bottom: 15px;
+}
+
+.map {
+  border-radius: 15px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: azure;
+}
+
+// .plans {
+//   background-color: rgb(234, 242, 255);
+// }
+
+.scroll-y {
+  overflow-y: auto;
+  max-height: calc(100vh - 90px);
+  background-color: aliceblue;
+  margin: 20px auto;
+  border-radius: 16px;
+  scroll-padding: 2px 4px;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 3.5vw; /* 3.5% of the viewport height */
+  margin-bottom: 20px;
+}
+
+.page {
+  overflow: hidden;
+  max-height: 100%;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3vw; /* 3% of the viewport height */
+  margin-bottom: 16px;
+}
+
+.practic__title {
+  font-size: 2vw;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.practic {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cacaca solid #cacaca;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.practic:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.practic-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.rabota {
+  display: flex;
+  height: 250px;
+}
+
+.rabota img {
+  margin-right: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.practic-main-des {
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #caca;
+}
+
+.works-global {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #cacaca;
+}
+
+.work__des {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.work:not(:last-child) {
+  margin-right: 50px;
+}
+
+.rabota img:last-child {
+  margin-right: 0;
+}
+
+.work__image img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.wlink {
+  margin-top: 110px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 450px;
+}
+
+.project img {
+  object-fit: cover;
+}
+
+.project:not(:last-child) {
+  margin-right: 20px;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  min-height: 400px;
+  padding: 13px 50px 50px;
+  border: 1px solid #cacaca;
+  border-top: none;
+  border-radius: 0 0 5% 5%;
+  // height: auto;
+}
+
+.project__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px black;
+}
+
+.plans__card {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cacaca;
+}
+
+.plans__card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plans__des {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.ymaps-2-1-79-map {
+  border-radius: 16px;
+}
+
+.sub-swiper {
+  .swiper {
+    &-slide {
+      width: auto;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 4px 12px;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-slide-thumb-active {
+  background-color: white;
+  border-radius: 8px;
+  color: crimson;
+  text-decoration: none !important;
+  padding: 4px 12px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1) !important;
+  }
+}
+
+.main-swiper {
+  height: calc(100% - 50px);
+  .swiper {
+    &-slide {
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    margin: 12px;
+    width: calc(100% - 24px);
+  }
+}
